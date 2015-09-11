@@ -1,0 +1,349 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Free Pet Microchip Registry</title>
+    <meta name="description" content="Free Pet Chip Registry is dedicated to the well being and safe return of your pet when lost! Free registration for all pets with microchips in North America!" />
+    <meta name="keywords" content="pet microchip" />
+	<link rel="stylesheet" href="/_css/style.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Comfortaa:400,300,700">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600">
+    <!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="/_css/ie.css" />
+	<![endif]-->
+    <script>var baseURL = "/";</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="/_js/selectbox.js"></script>
+<script src="/_js/js.js"></script>
+    
+        <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+</head>
+<body id="home">
+
+
+<div id="page-wrap">
+    <div id="header">
+        <a id="logo" href="/"><img src="/_img/logo.png" /></a>
+        <ul id="navigation">
+            
+                <li class="active" style="position:relative;">
+                <a class="home" href="/"><!-- i class="icon-home" style="font-size:26px;"></i --> Home<div style="top:0;left:0;position:absolute;width:58px;">&nbsp;</div></a>
+                </li>
+
+                <li class="">
+                <a id="create-account" class="create-account" href="#">Create an Account</a></li>
+                
+                <li class="">
+                <a id="support" href="/faqs/">Support</a>
+                </li>
+                
+                <li class="">
+				<a id="login" class="login" href="/login/">Login</a>
+                </li>
+
+                        
+        </ul>
+        
+        <div style="font-size:10px;color:#666;">The world's only Truly FREE 24/7/365 pet microchip registry and recovery service for ANY BRAND of microchip!</div>
+        
+    </div>
+    <div id="hero">
+	<div id="slides">
+    	<div class="slides_container">
+            <img src="/_img/hero-1.jpg" />
+            <img src="/_img/hero-2.jpg" />
+            <img src="/_img/hero-3.jpg" />
+            <img src="/_img/hero-4.jpg" />
+        </div>
+	</div>
+	<div id="hero-content" style="padding-top:35px;">
+        <h1>Register Your Pet's Microchip Number</h1>
+        <a class="button large one create-account" style="margin:30px 0 35px 15px;width:360px" href="#">REGISTER PET CREATE AN ACCOUNT</a><br/><br/>
+        
+        
+		<div class="fancy-box five" style="width:430px;">
+    <!-- h6></h6 -->
+    <div class="main" style="padding:10px;">
+        <form id="form-search" action="/search/" method="post">
+        
+            <!-- div class="form-item" style="height:65px;" -->
+                <p class="num one" style="margin-left:10px;">Found a lost Pet? Enter the <strong>microchip ID number</strong>:</p>
+                
+                <table>
+                <tr>
+                    <td>
+                        <input style="margin-left:10px;" name="chip" id="chip" type="text" value="" placeholder="(9, 10 or 15 characters)" />
+                    </td>
+                    <td>
+                    	&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <input class="button small two" type="submit" id="search" value="Search" style="display:inline;margin:0;" />
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="3">
+                        <div class="notice" style="margin-left:10px;"></div>
+					</td>
+				</tr>
+                </table>
+
+            <!-- /div -->
+
+                        
+                    </form>
+    </div>
+</div>
+
+<script>
+$(function() {
+
+    $("__#form-search #search").click(function(e) {
+
+        $.get(baseURL+'checkit2/', { chip: $("#form-search #chip").val() }, function(data) {
+            obj = $.parseJSON(data);
+            if (obj.error) {
+                $("#form-search .notice").html(obj.msg);
+            } else {
+                $("#form-search").submit();
+            }
+        });
+    });
+});
+</script>
+        
+		        
+        <div style="position:absolute;top:334px;left:1040px;"><a href="http://www.petmicrochiplookup.org" target="_blank"><img src="/_img/AAHA-LookupLogo.png" border="0" style="width:90px;"/></a></div>
+        
+    </div>
+    
+    
+</div>
+
+<script src="/_js/slides.js"></script>
+<script>
+	$(document).ready(function(e) {
+		$("#slides").slides({
+			generatePagination: false,
+			play: 5000,
+			pause: 2500,
+			hoverPause: true,
+			effect: 'fade',
+			crossfade: true,
+			fadeSpeed: 1500
+		}); 
+    });
+</script>    <div id="content">
+
+
+<div class="two-thirds-1 left">
+
+	<strong>Is your pet microchipped? Here's the next step</strong>
+<br/>
+<br/>
+
+<p>Simply microchipping your pet isn't enough. You need to register the microchip and your contact details into a database so your information can be found in the event you are separated from your pet. 
+
+Wouldn't you want your pet's home contact information registered on the most reliable, free animal identification database in the world?</p>
+
+
+
+<p>It is the best insurance you'll ever have, because it's <strong>FREE for the life of your pet</strong> and can be used by anyone with ANY BRAND of microchip. No registration fee; no maintenance fees; no fee to update your contact information; no fees at all as long as you <a class="create-account" href="create-account/">register your pet</a> with FreePetChipRegistry.com.</p>
+
+
+
+<p>Furthermore, we have a strict <strong>Non-Solicitation Policy:</strong>  Your information will not be sold to any third parties, and other than opt-in pet insurance banners inside of your FreePetChipRegistry account, you will not be solicited for anything as a result of registering your pet(s) at FreePetChipRegistry.com!</p>
+
+ 
+
+	    
+</div>
+
+<div class="one-third-1 right">
+    
+<table width="100%">
+<tr>
+    <td align="center">
+        <img __class="sidebar-circle" src="/_img/circle-1.jpg" width="140" height="140" style="margin:20px 0;" />
+    </td>
+    <td align="center">
+        <img __class="sidebar-circle" src="/_img/circle-2.jpg" width="140" height="140" style="margin:20px 0;" />
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <img __class="sidebar-circle" src="/_img/circle-3.jpg" width="140" height="140" style="margin:20px 0;" />
+    </td>
+    <td align="center">
+        <img __class="sidebar-circle" src="/_img/circle-4.jpg" width="140" height="140" style="margin:20px 0;" />
+    </td>
+</tr>
+</table>
+
+</div>
+
+		</div><!--END CONTENT-->
+        <div style="__background:url(../_img/footer2.jpg);">
+        <div id="footer" style="height:295px;">
+            <table class="links" width="900" style="margin-left:260px;margin-bottom:20px;margin-top:35px;" border=0>
+                <tr>
+                    <td width="20%" valign="top" style="text-align:left">
+                        <div style="font-weight:600;">Account</div>
+                        
+                        <div><a class="create-account" href="#">Create Account</a></div>
+                        <div><a class="login" href="/login/">Login</a></div>
+                        <div><a class="forgot" href="/forgot/">Forgot Password</a></div>
+            
+                                            </td>
+                    <td width="20%" valign="top" style="text-align:left">
+                        <div style="font-weight:600;">About</div>
+                        <div><a href="/our-mission/">Our Mission</a></div>
+                        <div><a href="/our-history/">Our History</a></div>
+                        <div><a href="/testimonials/">Testimonials</a></div>
+                    </td>
+                    <td width="20%" valign="top" style="text-align:left">
+                        <div style="font-weight:600;">Legal</div>
+                        <div><a href="/privacy-policy/">Privacy Policy</a></div>
+                        <div><a href="/terms-of-use/">Terms of Use</a></div>
+                    </td>
+                    <td width="20%" valign="top" style="text-align:left">
+                        <div style="font-weight:600;">Support</div>
+                        <div><a href="/faqs/">FAQs</a></div>
+                        <div><a href="/contact/">Contact</a></div>
+                    </td>
+                    <td width="20%" valign="top" style="text-align:left;padding-left:20px;">
+                        <a href="https://www.facebook.com/FreePetChipRegistry" target="_blank" style="text-decoration:none;"><i class="icon-facebook-sign" style="padding:8px;font-size:30px;"></i></a>
+                        <a href="https://twitter.com/petchipregistry" target="_blank" style="text-decoration:none;"><i class="icon-twitter" style="padding:8px;font-size:30px;"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                    </td>
+				</tr>                    
+            </table>
+
+            <div class="special-text-2" style="width:700px;;">
+	            <div style="font-size:10px;text-align:left;margin-left:10px;margin-top:30px"><strong>FreePetChipRegistry™ is a Participating Pet Recovery Service Registry for the AAHA Universal Pet Microchip Lookup Tool. </strong>
+                AAHA provides an internet-based application that enables veterinarians, humane organizations, pet owners or other persons to search various Pet Recovery Service registries and identify those registries on which a particular microchip is registered. AAHA is not affiliated or involved with any specific microchip registry and has no relationship, financial or otherwise, with this Participating Pet Recovery Service Registry ("Registry"). This Registry has given AAHA permission to search the Registry's database in order to assist pet owners in being reunited with their pets.  AAHA does not maintain a database of microchips of its own. It only links to registries such as this one. The AAHA Universal Microchip Lookup Tool only searches the databases of companies that elect to participate in the program.</div>
+                <br/>
+            </div>
+        
+        	            
+                        
+            <div class="special-text-2">
+            	<p>FreePetChipRegistry.com is not responsible for any persons misrepresenting ownership or submitting false information.</p>
+            	<p>FreePetChipRegistry.com accepts no responsibility during disputes over ownership of an animal.</p>
+            </div>
+            <div class="special-text-2" style="text-align:right;margin-right:10px;">
+	            <a style="color:#000;" href="http://www.islandtechnologies.net" target="_blank">Powered by Island Technologies</a>
+            </div>
+        </div>
+        </div>
+
+            
+	</div><!--END PAGE WRAP-->
+
+    <div id="overlay">
+        <div id="modal-border">
+            <div class="fancy-box one one-third-2">
+                <h6>Login</h6>
+<div class="main">
+
+	
+    <form method="post" action="/login/">
+    
+        <p>Email or Username:</p>
+        <input id="name" type="text" value="" name="username" />
+        
+        <p>Password:</p>
+        <input id="password" type="password" value="" name="password" />
+        
+        <input class="button small one" type="submit" value="Login" />
+        <p id="lost-password"><a href="/forgot-password/">Forgot your password?</a></p>
+    </form>
+</div>                <a id="modal-close" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay-create-account">
+        <div id="modal-border">
+            <div class="fancy-box one one-third-2">
+                <h6>Create an Account</h6>
+<div class="main">
+    <form method="post" action="/login/">
+        <h2>I am a...</h2>
+
+        <p><input type="button" class="button large one margin-2 left" style="__display:inline-block;__float:none;width:280px;text-align:left;" value="Pet Owner" onclick="document.location='/register-owner/';return false;"></p>
+
+        <p><input type="button" class="button large one margin-2 left" style="__display:inline-block;__float:none;width:280px;text-align:left;" value="Rescue Group" onclick="document.location='/register-prereg/?account=rescue';return false;"></p>
+
+        <p><input type="button" class="button large one margin-2 left" style="__display:inline-block;__float:none;width:280px;text-align:left;" value="Veterinarian" onclick="document.location='/register-prereg/?account=vet';return false;"></p>
+
+        <p><input type="button" class="button large one margin-2 left" style="__display:inline-block;__float:none;width:280px;text-align:left;" value="Animal Shelter" onclick="document.location='/register-prereg/?account=shelter';return false;"></p>
+
+        <p><input type="button" class="button large one margin-2 left" style="__display:inline-block;__float:none;width:280px;text-align:left;" value="Breeder" onclick="document.location='/register-prereg/?account=breeder';return false;"></p>
+
+        <div style="clear:both"></div>
+
+    </form>
+</div>                <a id="modal-close" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay-found-pet">
+        <div id="modal-border">
+            <div class="fancy-box five one-third-2">
+                <!-- div class="fancy-box five" -->
+    <h6>Found a lost Pet?</h6>
+    <div class="main">
+        <form action="/search/" method="post">
+        
+            <div class="form-item" style="height:85px;">
+                <p class="num one">Enter the <strong>microchip ID number</strong>:</p>
+                <input name="chip" id="chip" type="text" value="" placeholder="(9, 10 or 15 characters)" />
+            </div>
+
+                        <input class="button small two" type="submit" value="Search" />
+            
+                    </form>
+    </div>
+<!-- /div -->
+                <a id="modal-close" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay-forgot">
+        <div id="modal-border">
+            <div class="fancy-box five one-third-2">
+                <h6>Forgot Password</h6>
+<div class="main">
+    <form method="post" action="/forgot/">
+    
+        <div class="notice">
+                                </div>
+    
+        <p>Enter your Username:</p>
+        <input id="username" type="text" value="" name="username" />
+        
+        <div class="form-item">
+            <p>Or your Email:</p>
+            <input id="email" type="text" value="" name="email" />
+        </div>
+	
+    	<br/>
+        
+		<div id="submit">
+	        <input class="button small one" type="submit" value="Submit" />
+        </div>
+    </form>
+</div>                <a id="modal-close" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
