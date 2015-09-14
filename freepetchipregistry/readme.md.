@@ -1,0 +1,17 @@
+What a mess. Here's what I get with Ivan's tool, this morning: 
+
+https://www.ssllabs.com/ssltest/analyze.html?d=freepetregistry.com
+
+
+	Server	Domain(s)	Test time	Grade
+1	162.255.119.197 
+Unable to connect to server 
+freepetregistry.com
+Mon, 14 Sep 2015 11:24:36 UTC
+Duration: 0.15 sec	-
+2	199.59.166.109 
+Unable to connect to server 
+www.freepetregistry.com
+
+Mon, 14 Sep 2015 11:24:36 UTC
+Duration: 0.15 sec
